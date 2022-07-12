@@ -1,0 +1,102 @@
+****
+*1 --- git clone *** 
+                    comando para descargar codigo fuente desde un repositorio remoto. realiza una copia identica a la ultima verison de un proyecto en un repositorio
+ejemplo:
+git clone <https://link del repositorio>
+
+*2 --- git branch ***
+                    comando para crear ramas de un proyecto para que varios devs puedan trabajar en simultaneo, se pueden crear, eliminar, listar...
+                    
+ejemplo:
+git branch <nombre de la rama> *** crea una rama en local, luego un (push) para enviar
+ejemplo:
+git push <nombre remoto> <nombre de la rama>
+
+///estoy obviando la continuidad de los nombres y no uso  "_"
+
+***para visualizar ramas se usa :
+ git branch
+ 
+ git branch --list
+***para borrar una rama:
+ git branch -d <nombre de la rama>
+ 
+*3 --- git checkout ***
+                       comando usado para cambiarte a una rama para poder trabajar en ella, se usa para cambiarse entre ramas o chequear archivos y commits
+ejemplo:
+
+ git checkout <nombre de la rama>
+/// para poder cambiarte de rama primero debes confirmar los cambios en tu rama actual o en el guarado rapido (satsh) y ademas a rama a la que te cambies debe exisitir en local
+
+para crear y cambiarte a una rama al mismo tiempo hacemos:
+git checkout -b <nombre de la rama>
+/// -b viene de branch y con este comando creamos una rama nueva en local y nos cambiamos a ella
+
+*4 ---git status***
+                   comando que proporciona toda la info de la rama actual
+ejemplo:
+ git status 
+ ///info como : si la rama esta actualizada
+                si hay algo para confirmar, enviar o recibir(pull)
+                si hay archivos creados o modificados, etc.
+                si hay archivos en preparacion, sin preparacion o no se estan recibiendo (staged),(unstaged)y (untracked)
+
+*5 ---git add***
+                comando que usamos para incluir los cambios nuevos al commit ya que cuando creamos, modificamos o eliminamos archivos lo hacemos en local y no se reflejan en el commit (se puede comfigurar para que si)
+                
+agregar archivo:
+
+git add <archivo>
+
+agregar todo:
+
+git add -A
+
+*6 ---git commit***
+                   comando mas usado, los usamos para establecer un punto de control en el proceso de desarrollo, lo hacemos usando un mensaje de referencia para explicar los cambios hechos
+ejemplo:
+git commit -m "mensaje de comfirmacion"
+///ojo esto guarda los cambios solo en local
+
+*7 ---git push***
+                  despues de realizados los cambios usamos este comando para enviarlos al remoto, git push envia los commits al repositorio remoto
+ejemplo:
+ git push <nombre remoto> <nombre de la rama>
+ 
+                  
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      
+
+ 
+
